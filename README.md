@@ -17,6 +17,15 @@ This project aims to employ predictive analytics to achieve strategic customer s
 2. Install dependencies: `pip install -r requirements.txt`.
 3. Run the Jupyter notebooks for detailed analysis and model building steps.
 
+## Project Architecture and walkthrough
+
+1. At the head level, there are two folders... Notebooks, and Src.
+   - Notebooks: Contains two folders, One contains the customer segmentation notebooks, the other contains the Applicant approval decsion notebooks
+   - Src: Contains the source code for the application that makes use of the highest performing Applicant decsion model from the Notebooks folder.
+  
+2. The notebooks display how the data was cleaned and wrangled, and how the models were trained and evaluated
+3. The Src application displays how a trained model could be used in production, by getting the applicants data from a user interface to a backend server where the trained model can be reused in real time, responding to the applicant with a descision. 
+
 ## Datasets
 
 1. **Customer Segmentation Dataset**: Includes customer demographics, spending behavior, and transaction data.
