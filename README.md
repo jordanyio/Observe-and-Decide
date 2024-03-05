@@ -49,4 +49,8 @@ This project aims to employ predictive analytics to achieve strategic customer s
 - Improved accuracy in predicting credit card approval, enhancing customer satisfaction and operational efficiency.
 
 
+# Footer
+The develop branch contains an attempt at customer segmentaion on a separate dataset. This is not a part of the graded submission. Only branch main is meant to be graded. 
+
+
 
