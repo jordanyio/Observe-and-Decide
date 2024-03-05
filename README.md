@@ -1,6 +1,6 @@
 # Observe-and-Decide
 
-# Predictive Analytics for Credit Card Customer Segmentation and Approval
+# Predictive Analytics for Credit Card Applicant Approval
 
 ## Introduction
 
@@ -8,40 +8,37 @@ This project aims to employ predictive analytics to achieve strategic customer s
 
 ## Objectives
 
-- **Customer Segmentation**: To segment the credit card customer base to identify valuable customers and tailor services accordingly.
-- **Credit Card Approval Prediction**: To predict the approval status of credit card applications using machine learning models, improving decision-making processes.
+- **Credit Card Approval Prediction**: To predict the approval status of credit card applications using machine learning model, improving decision-making processes.
 
 ## How to Use
 
 1. Clone this repository.
-2. Install dependencies: `pip install -r requirements.txt`.
-3. Run the Jupyter notebooks for detailed analysis and model building steps.
+2. Run the Jupyter notebooks for detailed analysis and model building steps.
+3. cd int0 Frontend/credit-window run npm install, npm run dev. Install any dependancies first.
+4. cd into backend. run python app.py. Install all depandcies first.
+5. Wait for the backend to confirm the model is trained before running requests. Depenging on your machine this could take up to 5-10 minutes. 
 
 ## Project Architecture and walkthrough
 
-1. At the head level, there are two folders... Notebooks, and Src.
-   - Notebooks: Contains two folders, One contains the customer segmentation notebooks, the other contains the Applicant approval decsion notebooks
-   - Src: Contains the source code for the application that makes use of the highest performing Applicant decsion model from the Notebooks folder.
+1. At the head level, there are three folders... Notebooks, Frontend and Backend.
+   - Notebooks: Contains the Applicant approval decsion model notebook.
+   - Backend: Contains the Flask server that will respond to the front end by using the model to make a decision. 
+   - Frontend: Contains the source code for a React js frontend UI, the application that makes use of the decsion model from the Notebooks folder.
   
-2. The notebooks display how the data was cleaned and wrangled, and how the models were trained and evaluated
-3. The Src application displays how a trained model could be used in production, by getting the applicants data from a user interface to a backend server where the trained model can be reused in real time, responding to the applicant with a descision. 
-
 ## Datasets
 
-1. **Customer Segmentation Dataset**: Includes customer demographics, spending behavior, and transaction data.
-2. **Credit Card Approval Dataset**: Contains applicant's personal information, financial history.
+1. **Credit Card Approval Datasets**: Contains applicant's personal information, financial history.
 
 ## Methodology
 
 ### Data Preprocessing
 
-- Cleaning: Removing outliers, handling missing values.
+- Cleaning, FIltering, Feature Engineering
 - Transformation: Normalizing and encoding features for model compatibility.
 
 ### Model Development
 
-- Employing clustering techniques for customer segmentation.
-- Utilizing classification algorithms (e.g., Logistic Regression, Random Forest) for approval prediction.
+- Utilizing classification algorithms (Random Forest) for approval prediction.
 
 ### Evaluation
 
@@ -49,7 +46,6 @@ This project aims to employ predictive analytics to achieve strategic customer s
 
 ## Results
 
-- Achieved distinct customer segments with tailored marketing strategies.
 - Improved accuracy in predicting credit card approval, enhancing customer satisfaction and operational efficiency.
 
 
